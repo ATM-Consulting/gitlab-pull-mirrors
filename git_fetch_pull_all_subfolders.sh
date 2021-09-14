@@ -15,7 +15,7 @@ do
   if [ -d "$REPOSITORIES/$REPO" ]
   then
     echo "Updating $REPOSITORIES/$REPO at `date`"
-    if [ -d "$REPOSITORIES/$REPO/.git" ]
+    if [ -d "$REPOSITORIES/$REPO/branches" ]
     then
       cd "$REPOSITORIES/$REPO"
       git status
