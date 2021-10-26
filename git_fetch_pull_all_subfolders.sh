@@ -18,7 +18,7 @@ do
     if [ -d "$REPOSITORIES/$REPO/branches" ]
     then
       cd "$REPOSITORIES/$REPO"
-      git status
+#      git status
       echo "Fetching from origin"
       git fetch origin
       echo "Pushing to gitlab"
