@@ -23,6 +23,7 @@ do
       git fetch origin
       echo "Pushing to gitlab"
       git push gitlab --all
+      git push gitlab --tags
     else
       echo "Skipping because it doesn't look like it has a .git folder."
     fi

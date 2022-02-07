@@ -18,4 +18,5 @@ cd "$foldername"
 git remote add --mirror=fetch gitlab "$mirrorripos"
 git fetch origin
 git push gitlab --all
+git push gitlab --tags
 cd "$SCRIPTFOLDER"
