@@ -22,8 +22,9 @@ do
       echo "Fetching from origin"
       git fetch origin
       echo "Pushing to gitlab"
-      git push gitlab --all
-      git push gitlab --tags
+      git push -f gitlab --all
+#      git push gitlab --delete $(git tag -l)
+      git push -f gitlab --tags
     else
       echo "Skipping because it doesn't look like it has a .git folder."
     fi
